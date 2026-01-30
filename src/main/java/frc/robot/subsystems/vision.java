@@ -18,7 +18,8 @@ import edu.wpi.first.math.system.LinearSystemLoop;
 import edu.wpi.first.math.estimator.SteadyStateKalmanFilter;
 
 public class vision extends SubsystemBase {
-  private final DifferentialDrivePoseEstimator m_PoseEstimator = new DifferentialDrivePoseEstimator(null, null, 0, 0,
+  private final DifferentialDrivePoseEstimator m_PoseEstimator = 
+  new DifferentialDrivePoseEstimator(null, null, 2, 2,
       new Pose2d(),
       VecBuilder.fill(0.05, 0.05, Units.degreesToRadians(5)),
       VecBuilder.fill(0.5, 0.5, Units.degreesToRadians(30)));// 位置估計器
